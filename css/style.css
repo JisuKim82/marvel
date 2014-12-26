@@ -56,12 +56,13 @@ table {
 body{
 	font: normal 1.1em/1.5 sans-serif;
 	min-height: 100%;
+	background-image: url(../images/background-image-main.png);
 }
 .header, .footer{
 	display: table;
 	width: 100%;
 	height: 100%;
-	background-color: rgba(125,178,31,0.8);
+	background-color: rgba(125,178,31,0.1);
 	text-align: center;
 }
 .container{
@@ -90,7 +91,7 @@ body{
 	font-size: 24px;
 	max-width: 100%;
 	position: relative;
-    text-align:center;
+  text-align:center;
 	margin: 0 0;
 	padding: 0 12px;
 
