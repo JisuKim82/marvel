@@ -1,0 +1,136 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+body {
+  background: url(../images/background-image-main.png) no-repeat;
+}
+
+header {
+  height: 4em;
+  border: 1px solid red;
+  min-width: 780px;
+  position: relative;
+}
+.info,
+.logo,
+.nav-top > div,
+.main-footer > a {
+  display: inline-block;
+}
+.info {
+  width: 25%;
+  min-width: 450px;
+  border: 1px solid green;
+  padding: 13px 0 13px 75px;  
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  background: -webkit-linear-gradient(left,rgba(177,223,235,.85),rgba(177,223,235,0)); /*Safari 5.1-6*/
+  background: -o-linear-gradient(right,rgba(177,223,235,.85),rgba(177,223,235,0)); /*Opera 11.1-12*/
+  background: -moz-linear-gradient(right,rgba(177,223,235,.85),rgba(177,223,235,0)); /*Fx 3.6-15*/
+  background: linear-gradient(to right, rgba(177,223,235,.85), rgba(177,223,235,0)); /*Standard*/
+}
+.logo {
+  height: 100%;
+  width: 15%;
+  min-width: 100px;
+  /*border: 1px solid black;*/
+  position: absolute;
+  top: 0;
+  background: blue;
+}
+.info a {
+  text-decoration: none;
+  /*color: rgb(0,135,205);*/
+}
+
+.nav-top {
+  border: 1px solid purple;
+  background: rgba(168,168,168,.75);
+  height: 2em;
+}
+.nav-top > div {
+  width: 19%;
+  height: 100%;
+  text-align: center;
+  font-size: 25px;
+  color: white;
+  border: 1px solid purple;
+  position: relative;
+}
+.products-menu {
+  width: 100%;
+  background: rgb(235,235,235);
+  color: black;
+  position: absolute;
+  font-size: 16px;
+  top: 2em;
+}
+.products-menu > div {
+  border: 1px solid red;
+  padding: 8px;
+  font-weight: bold;
+}
+.hide {
+  display: none;
+}
+.main-footer {
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+}
+.copyright {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+}
+.hovered {
+  background: rgb(125,125,125);
+}
+.products-menu > div:hover {
+  background: rgb(190,190,190);
+  cursor: pointer;
+}
+#social {
+  position: fixed;
+  top: 6.5em;
+  right:1px;
+}
+#social > a {
+  display: block;
+  width: 46px;
+  height: 46px;
+  color: transparent;
+}
+.fbook { background: url('../images/sprite-social-icons.png') no-repeat 0 0; }
+.twitt { background: url('../images/sprite-social-icons.png') no-repeat 0 -57px; }
+.ytube { background: url('../images/sprite-social-icons.png') no-repeat 0 -119px; }
+
+.fbook:hover { background: url('../images/sprite-social-icons.png') no-repeat -55px 0; }
+.twitt:hover { background: url('../images/sprite-social-icons.png') no-repeat -55px -57px; }
+.ytube:hover { background: url('../images/sprite-social-icons.png') no-repeat -55px -119px; }
+
+.main-footer > a {
+  width: 10%;
+  text-align: center;
+}
+
